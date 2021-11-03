@@ -1,5 +1,8 @@
 #!/bin/bash
 
+if [ "$1" = "0" ]; then
+  exit
+fi
 for i in $(seq 1 $1);  do
   ${@:2}
 done
